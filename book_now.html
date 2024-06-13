@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title> Revolt Motors </title> 
+
+   <!-- Linking Navigation and Footer -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="extra.css"> -->
+
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Index file content style sheet -->
+    <link rel="stylesheet" href="book_now.css">
+
+    <!-- For Responsive Navigation bar -->
+    <script src="main.js"></script>
+
+    <!-- <?php
+
+      include('db-connection.html');
+
+    ?> -->
+
+   </head>
+<body>
+
+  <!-- Navigation Bar content -->
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/revolt-fb-removebg-preview.png" class="logo1">
+        </a>
+      </div>
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+          <!-- Setting the links to #! will ensure that no action takes place on click. -->
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="test-ride.html">Test Ride</a></li>
+          <li><a href="book_now.html">Book Now</a></li>
+          <!-- <li><a href="#!">Shop</a>
+            <ul class="nav-dropdown">
+              <li><a href="upgrade.html">Upgrade Option</a></li>
+            </ul>
+          </li> -->
+          <li><a href="charging.html">Charging</a></li>
+          <li><a href="intelligence.html">Intelligence</a></li>
+          <!-- <li><a href="#!">Media</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Body Content Start -->
+  <div class="main-div">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"><b>1 / 4</b></div> -->
+          <img src="assets/lighting_yellow.png" height="500px" width="610px">
+          <!-- <div class="text"><b>Why can't you Geo-Locate your motorcycle?</b></div> -->
+      </div>
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"><b>2 / 4</b></div> -->
+          <img src="assets/eclipse_red.png" height="500px" width="610px">
+          <!-- <div class="text"><b>Why can't you Change your motorcyle's sound?</b></div> -->
+      </div>
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"><b>3 / 4</b></div> -->
+          <img src="assets/pacific_blue.png" height="500px" width="610px">
+          <!-- <div class="text"><b>Why can't you Geo-Fence your motorcycle?</b></div> -->
+      </div>
+      <div class="mySlides fade">
+          <!-- <div class="numbertext"><b>4 / 4</b></div> -->
+          <img src="assets/stealth-black.png" height="500px" width="610px">
+          <!-- <div class="text"><b>Why can’t you switch your motorcycle’s battery for a fresh one?</b></div> -->
+      </div>
+      <div class="mySlides fade">
+        <!-- <div class="numbertext"><b>4 / 4</b></div> -->
+        <img src="assets/product_grey.png" height="500px" width="610px">
+        <!-- <div class="text"><b>Why can’t you switch your motorcycle’s battery for a fresh one?</b></div> -->
+      </div>
+      <div class="mySlides fade">
+        <!-- <div class="numbertext"><b>4 / 4</b></div> -->
+        <img src="assets/brz_cosmic_black.png" height="500px" width="610px">
+        <!-- <div class="text"><b>Why can’t you switch your motorcycle’s battery for a fresh one?</b></div> -->
+      </div>
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+  
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+    <!-- <img src="assets/brz_cosmic_black.png" width="600px" height="500px"> -->
+    <section class="container1">
+        <header>BOOK YOUR REVOLT</header>
+        <hr style="width: 100%; height: 1px; color: gray; opacity: 0.4;">
+        <form action="" class="form" method="post">
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter full name" required />
+          </div>
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="text" name="email" placeholder="Enter email address" required />
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="number" name="number" placeholder="Enter phone number" required />
+            </div>
+            <!-- <div class="input-box">
+              <label>Birth Date</label>
+              <input type="date" placeholder="Enter birth date" required />
+            </div> -->
+          </div>
+          <!-- <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" checked />
+                <label for="check-male">male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">Female</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" />
+                <label for="check-other">prefer not to say</label>
+              </div>
+            </div>
+          </div> -->
+          <div class="input-box address">
+            <label>Address</label>
+            <input type="text" name="street1" placeholder="Enter street address" required />
+            <input type="text" name="treet2" placeholder="Enter street address line 2" required />
+            <div class="column">
+              <!-- <div class="select-box">
+                <select>
+                  <option hidden>Country</option>
+                  <option>America</option>
+                  <option>Japan</option>
+                  <option>India</option>
+                  <option>Nepal</option>
+                </select>
+              </div> -->
+              <input type="text" name="city" placeholder="Enter your city" required />
+            </div>
+            <div class="column">
+              <input type="text" name="region" placeholder="Enter your region" required />
+              <input type="number" name="pcode" placeholder="Enter postal code" required />
+            </div>
+          </div>
+          <input type="checkbox" id="check" name="check"> I agree to the <font style="color: red;">Terms & Conditions</font> for this booking.
+          <button id="button" name="submit1">Submit</button>
+        </form>
+
+        <!-- <?php
+
+      if(isset($_POST['submit1']))
+      {
+
+        if(isset($_POST['check'])) {
+
+          mysqli_query($con, "INSERT INTO `book_now` (`Full Name`, `Email Address`, `Phone Number`, `Street Address`, `Street Address2`, `City`, `Postal Code`, `Region`) VALUES
+          ('$_POST[name]', '$_POST[email]', '$_POST[number]', '$_POST[street1]', '$_POST[street2]', '$_POST[city]', '$_POST[region]', '$_POST[pcode]')");
+
+        } else {
+          echo "You must agree to the Terms & Conditions to proceed.";
+        }
+      }
+
+    ?> -->
+
+      </section>
+  </div>
+
+  <!-- Footer Content -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Motorcycles</h4>
+          <ul>
+            <li><a href="#">RV400</a></li>
+            <li><a href="#">RV400 BRZ</a></li>
+            <!-- <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Revolt</h4>
+          <ul>
+            <li><a href="about_us.html">Our Story</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="mailto:egaadioffice@gmail.com">egaadioffice@gmail.com</a></li>
+            <li><a href="#">Become a Dealer</a></li>
+            <!-- <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms&con.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="caution-notice.html">Caution Notice</a></li>
+            <li><a href="eula.html">EULAs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p style="text-align: center; color: white; margin-top: 15px;">
+        All information is subject to specific conditions | Copyright © 2023 Revolt Intellicorp Private Limited. All right reserved.
+      </p>
+    </div>
+ </footer>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.content {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    text-align: start;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .content {
+      text-align: left;
+    }
+  }
+
+
+
+

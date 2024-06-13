@@ -1,0 +1,107 @@
+.container12 {
+    width: 100%;
+    height: auto; 
+    background-image: url('assets/revolt_bike.png');
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-wrap: wrap;
+    filter: brightness(0.5); 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.sub-container {
+    color: white;
+    font-weight: bold;
+    text-align: left; 
+    width: 30%;
+    max-width: 500px; 
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-container {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+}
+
+
+/* styling for the second div */
+.container1 {
+    width: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* height: 200px; */
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    height: 140px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 10px; /* Adjust margin as needed */
+    /* max-width: 400px; */
+}
+
+@media only screen and (max-width: 678px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin: 10px 0; /* Adjust margin as needed */
+    }
+}
+
+/* 3rd div styling */
+.info-card{
+    background-color: rgb(222, 221, 219);
+    margin-top: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    flex: 1;
+    /* height: 500px; */
+    padding: 140px;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .info-card {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .info-img{
+        margin-top: -95px;
+    }
+
+    .info p{
+        width: 400px;
+    }
+
+    .info{
+        flex: 1;
+        width: 500px;
+        height: auto;
+        padding: 140px;
+        margin: 0 10px;
+    }
+}
+
+

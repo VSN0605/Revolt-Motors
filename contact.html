@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title> Revolt Motors </title> 
+
+   <!-- Linking Navigation and Footer -->
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Contact file content style sheet -->
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- For Responsive Navigation bar -->
+    <script src="main.js"></script>
+
+    <!-- <?php
+
+      include('db-connection.html');
+
+    ?> -->
+
+   </head>
+<body>
+
+  <!-- Navigation Bar content -->
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/revolt-fb-removebg-preview.png" class="logo1">
+        </a>
+      </div>
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+          <!-- Setting the links to #! will ensure that no action takes place on click. -->
+          <li><a href="test-ride.html">Test Ride</a></li>
+          <li><a href="book_now.html">Book Now</a></li>
+          <!-- <li><a href="#!">Shop</a>
+            <ul class="nav-dropdown">
+              <li><a href="upgrade.html">Upgrade Option</a></li>
+            </ul>
+          </li> -->
+          <li><a href="charging.html">Charging</a></li>
+          <li><a href="intelligence.html">Intelligence</a></li>
+          <!-- <li><a href="#!">Media</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  
+  <!-- Body image -->
+  <img src="assets/contact-us.png" class="body-image" alt="Revolt-RV 400">
+
+    <form method="post">
+      <div class="main-container">
+          <div class="form-container">
+              <div class="form">
+                  <span class="heading">Get in touch</span>
+                  <input placeholder="Name" type="text" name="name" class="input">
+                  <input placeholder="Email" id="mail" name="email" type="email" class="input">
+                  <input placeholder="Number" type="text" name="number" class="input">
+                  <textarea placeholder="Your Message" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                  <div class="button-container">
+                  <!-- <button name="button1"><div class="send-button">Send</div></button> -->
+                  <input type="submit" name="submit1" class="send-button" value="Send">
+                  <div class="reset-button-container">
+                      <div id="reset-btn" class="reset-button">Reset</div>
+                  </div>
+              </div>
+          </div>
+          </div>    
+      </div>
+    </form>
+
+    <!-- <?php
+
+      if(isset($_POST['submit1']))
+      {
+
+        mysqli_query($con, "INSERT INTO `contact_us` (`Name`, `Email`, `Number`, `Message`) VALUES
+        ('$_POST[name]', '$_POST[email]', '$_POST[number]', '$_POST[message]')");
+
+      }
+
+    ?> -->
+
+    <!-- contact info section -->
+    <div class="main-div">
+      <div class="column">
+          <img src="assets/location.png" alt="Location" height="100px" width="105px">
+          <p><b>Revolt Hub</b></p>
+          <p>Shop No. 2 & 3, Ground Floor, Gawande Layout, Near Khamla Chowk, Ring Road, Nagpur-440015, Maharashtra</p>
+      </div>
+      <div class="column">
+          <img src="assets/email.png" alt="E-mail" height="50px" width="50px">
+          <p><b>Email Us</b></p>
+          <p>egaadioffice@gmail.com</p>
+      </div>
+      <div class="column">
+          <img src="assets/call.png" alt="Helpline" height="50px" width="50px">
+          <p><b>Helpline</b></p>
+          <p>+91-7038811110 <br>
+          (Mon-Sun, 10 AM-7 PM)</p>
+      </div>
+      <div class="column">
+          <img src="assets/whatsapp-removebg-preview.png" alt="WhatsApp" height="80px" width="80px" style="margin-top: -3%;">
+          <p><b>WhatsApp Us</b></p>
+          <p>+91-9112233495</p>
+      </div>
+  </div>
+  
+      <br>
+
+  <!-- Footer Content -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Motorcycles</h4>
+          <ul>
+            <li><a href="#">RV400</a></li>
+            <li><a href="#">RV400 BRZ</a></li>
+            <!-- <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Revolt</h4>
+          <ul>
+            <li><a href="about_us.html">Our Story</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="mailto:egaadioffice@gmail.com">egaadioffice@gmail.com</a></li>
+            <!-- <li><a href="#">Become a Dealer</a></li> -->
+            <!-- <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms&con.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="caution-notice.html">Caution Notice</a></li>
+            <li><a href="eula.html">EULAs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p style="text-align: center; color: white; margin-top: 15px;">
+        All information is subject to specific conditions | Copyright © 2023 Revolt Intellicorp Private Limited. All right reserved.
+      </p>
+    </div>
+ </footer>
+
+</body>
+</html>

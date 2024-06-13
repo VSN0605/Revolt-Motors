@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title> Revolt Motors </title> 
+
+   <!-- Linking Navigation and Footer -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="extra.css"> -->
+
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- About file content style sheet -->
+    <link rel="stylesheet" href="test-ride.css">
+
+    <!-- icons css link -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- For Responsive Navigation bar -->
+    <script src="main.js"></script>
+
+    <!-- <?php
+
+      include('db-connection.html');
+
+    ?> -->
+
+   </head>
+<body>
+
+  <!-- Navigation Bar content -->
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/revolt-fb-removebg-preview.png" class="logo1">
+        </a>
+      </div>
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+          <!-- Setting the links to #! will ensure that no action takes place on click. -->
+          <li><a href="#!">Test Ride</a></li>
+          <li><a href="book_now.html">Book Now</a></li>
+          <!-- <li><a href="#!">Shop</a>
+            <ul class="nav-dropdown">
+              <li><a href="upgrade.html">Upgrade Option</a></li>
+            </ul>
+          </li> -->
+          <li><a href="charging.html">Charging</a></li>
+          <li><a href="intelligence.html">Intelligence</a></li>
+          <!-- <li><a href="#!">Media</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- body section started -->
+  <div style="width: 100%; display: flex; align-items: center; justify-content: space-evenly; flex-direction: row; flex-wrap: wrap; margin: 5% 0;">
+    
+    <!-- <div class="main-div"> -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"><b>1 / 4</b></div> -->
+            <img src="assets/lighting_yellow.png" height="500px" width="610px">
+            <!-- <div class="text"><b>Why can't you Geo-Locate your motorcycle?</b></div> -->
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"><b>2 / 4</b></div> -->
+            <img src="assets/eclipse_red.png" height="500px" width="610px">
+            <!-- <div class="text"><b>Why can't you Change your motorcyle's sound?</b></div> -->
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"><b>3 / 4</b></div> -->
+            <img src="assets/pacific_blue.png" height="500px" width="610px">
+            <!-- <div class="text"><b>Why can't you Geo-Fence your motorcycle?</b></div> -->
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"><b>4 / 4</b></div> -->
+            <img src="assets/stealth-black.png" height="500px" width="610px">
+            <!-- <div class="text"><b>Why can’t you switch your motorcycle’s battery for a fresh one?</b></div> -->
+        </div>
+        <div class="mySlides fade">
+          <!-- <div class="numbertext"><b>4 / 4</b></div> -->
+          <img src="assets/product_grey.png" height="500px" width="610px">
+          <!-- <div class="text"><b>Why can’t you switch your motorcycle’s battery for a fresh one?</b></div> -->
+        </div>
+        <div class="mySlides fade">
+          <!-- <div class="numbertext"><b>4 / 4</b></div> -->
+          <img src="assets/brz_cosmic_black.png" height="500px" width="610px">
+          <!-- <div class="text"><b>Why can’t you switch your motorcycle’s battery for a fresh one?</b></div> -->
+        </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+      </div>
+    
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+          var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+      }
+    </script>
+
+    <form class="form" method="post">
+        <p class="title">BOOK YOUR TEST-RIDE </p>
+        <p class="message">Choose Your Model</p>
+            <div class="flex">
+            <label>
+                <input class="input" name="name1" type="text" placeholder="" required="">
+                <span>Firstname</span>
+            </label>
+    
+            <label>
+                <input class="input" name="name2" type="text" placeholder="" required="">
+                <span>Lastname</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input class="input" name="email" type="email" placeholder="" required="">
+            <span>Email</span>
+        </label> 
+            
+        <label>
+            <input class="input" name="number" type="text" placeholder="" required="">
+            <span>Mobile</span>
+        </label>
+        <label>
+            <select class="input" value="" name="model" placeholder="" required="">
+                <!-- <option></option> -->
+                <option value="RV400">RV400</option>
+                <option value="RV400 BRZ">RV400 BRZ</option>
+            </select>
+            <span>Select Your  Model</span>
+        </label>
+        <button class="submit" name="submit1">Submit</button>
+        <p class="signin">*By clicking “Submit”, I give my consent to Revolt Intellicorp Private Limited and its authorised service providers to hold my personal data and communicate with me by e-mail, WhatsApp, SMS or phone call for Notify purposes.</p>
+      </form>
+
+      <!-- <?php
+
+      if(isset($_POST['submit1']))
+      {
+
+        mysqli_query($con, "INSERT INTO `test_ride` (`First Name`, `LastName`, `Email`, `Number`, `BikeModel`) VALUES
+        ('$_POST[name1]', '$_POST[name2]', '$_POST[email]', '$_POST[number]', '$_POST[model]')");
+
+      }
+
+    ?> -->
+
+  </div>
+
+  <!-- Footer Content -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Motorcycles</h4>
+          <ul>
+            <li><a href="#">RV400</a></li>
+            <li><a href="#">RV400 BRZ</a></li>
+            <!-- <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Revolt</h4>
+          <ul>
+            <li><a href="about_us.html">Our Story</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="mailto:egaadioffice@gmail.com">egaadioffice@gmail.com</a></li>
+            <!-- <li><a href="#">Become a Dealer</a></li> -->
+            <!-- <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms&con.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="caution-notice.html">Caution Notice</a></li>
+            <li><a href="#">EULAs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <p style="text-align: center; color: white; margin-top: 15px;">
+        All information is subject to specific conditions | Copyright © 2023 Revolt Intellicorp Private Limited. All right reserved.
+      </p>
+    </div>
+ </footer>
+
+</body>
+</html>
